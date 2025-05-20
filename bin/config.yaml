@@ -1,0 +1,36 @@
+#User config params
+#obs and act spaces
+num_actions: 12
+num_observations: 43
+num_stacks: 3
+
+control_dt: 0.015
+#joint position increments limits
+act_inc_high: [ 3.5,  15. ] # f*2+(leg*5)*2+torso*1+(arm*4)*2
+act_inc_low: [ 0.5, -15. ]
+
+#target command ranges
+vx_cmd_range: [ -0.3, 0.5 ] #m/s
+yr_cmd_range: [ -1., 1. ]  #rad/s
+kp_yaw_ctrl: 2.
+
+#reference joint action
+sin_joint_idx: 1
+use_sim_gait: false
+ref_joint_act: [ 0.4, -0.1, -1.5, 1., -1.3,  -0.4, 0.1, 1.5, -1., 1.3 ]
+
+
+#joint position limits
+act_pos_low: [ -0.1, -0.3, -2.1, 0, -2.5,   -0.7, -0.6, 0, -2.1, 0 ]
+act_pos_high: [ 0.7, 0.6,  0.,  2.1, 0,      0.1,  0.3, 2.1, 0, 2.5 ]
+
+#motor stiffness and damping
+# for soft control
+kp_soft: [ 0.,0.,0.,0.,0. , 0.,0.,0.,0.,0. ] #(hip*3+knee*1+ankle*1)*2
+kd_soft: [ 0.,0.,0.,0.,0., 0.,0.,0.,0.,0. ] #(hip*3+knee*1+ankle*1)*2
+
+# for position stand and rl control
+kp: [ 1,0.5, 1.5, 1,1 , 1,0.5,1.5,1,1 ] #(hip*3+knee*1+ankle*1)*2
+kd: [ 0.05,0.05,0.05,0.05,0.05, 0.05,0.05,0.05,0.05,0.05 ] #(hip*3+knee*1+ankle*1)*2
+
+
