@@ -21,8 +21,8 @@ for robotics applications.
 **Maintainer**: Yanyun Chen, Tiyu Fang, Kaiwen Li, Kunqi Zhang, and Wei zhang<br>
 **Affiliation**: Visual Sensing and Intelligent System Lab (VSISLab),
 School of Control Science and Engineering,
-Shandong University, China 
-**Website**: www.vsislab.com
+Shandong University, China<br> 
+**Website**: www.vsislab.com<br>
 **Contact**: info@vsislab.com
 
 ### Features
