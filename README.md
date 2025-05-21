@@ -158,8 +158,3 @@ If you use this code in your research, please cite our work:
 }
 
 ```
-
-
-## Contact
-
-For questions or support, please open an issue on GitHub or contact us at [yy_chen@mail.sdu.edu.cn].
