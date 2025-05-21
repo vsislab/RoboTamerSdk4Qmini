@@ -13,7 +13,7 @@ This repository provides C++ deployment code for biped robot motion control,
 leveraging ONNX Runtime for high-performance model inference in real-world robotics systems. 
 It enables seamless deployment of pre-trained reinforcement learning policies (exported 
 as ONNX models from *.pt or *.pth models) onto Linux-based edge devices or robot hardware, 
-ensuring low-latency, real-time control for robots like Unitree Q1. The codebase includes 
+ensuring low-latency, real-time control for robots like Unitree Qmini. The codebase includes 
 optimized inference pipelines, hardware acceleration support (CPU/GPU), and Linux compatibility
 for robotics applications.
 
@@ -26,7 +26,7 @@ Shandong University, China
 **Contact**: info@vsislab.com
 
 ### Features
-- **High-Performance Inference** — Optimized C++ implementation with ONNX Runtime for low-latency, real-time policy execution on robots like Unitree Q1.<br>
+- **High-Performance Inference** — Optimized C++ implementation with ONNX Runtime for low-latency, real-time policy execution on robots like Unitree Qmini.<br>
 - **Hardware Acceleration** — Supports CPU/GPU backends (including CUDA) for maximum inference speed on Linux-based edge devices.<br>
 - **Modular Architecture** — Easy-to-use API for integrating with custom robot hardware, sensors, and actuators.<br>
 - **Safety-Critical Design** — Built-in emergency stop mechanisms, sensor validation, and fail-safe protocols for real-world operation.<br>
@@ -92,7 +92,7 @@ sudo cp libUnitreeMotorSDK_arm64.so /usr/local/lib/ /usr/lib/
 ```
 
 
-## Full steps of operating q1_sdk on the real Q1 robot
+## Full steps of operating RoboTamerSdk4Qmini on the real Qmini robot
 #### Before start
 ```bash
 cmake -DPLATFORM=arm64 .. && make && cd bin
